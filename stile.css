@@ -1,0 +1,96 @@
+/* CSS Reset & Global Styles */
+@font-face {
+    font-family: 'Calculator';
+    src: url('Calculator.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Calculator';
+  font-size: 50px;
+  -webkit-appearance: none;
+  background-color: rgb(210, 210, 210);
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 25px;
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+  width: 108px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 0.2em;
+  box-shadow: 10px 5px 5px gray;
+}
+
+input:active {
+  box-shadow: 0px 0px 0px gray;
+}
+
+.line {
+  margin-bottom: 4px;
+}
+
+.lineHisto {
+  display: inline-block;
+  padding: 25px;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+  width: 685px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 0.2em;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.histo {
+  display: inline-block;
+}
+
+input[type="button"] {
+  color: rgb(122, 122, 122);
+}
+
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  width: 344px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(37, 35, 59);
+  color: #fff;
+}
+
+input[id="clear-button"]:hover {
+  background-color: rgb(255, 25, 25);
+  color: #fff;
+}
+
+input[id="del-button"] {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+input[id="del-button"]:hover {
+  background-color: rgb(255, 25, 25);
+  color: #fff;
+}

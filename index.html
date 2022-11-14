@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <titcalcul ARPHANT</title>
+    <link rel="stylesheet" href="stile.css" id="theme"/>
+</head>
+<body>
+  <div style="display: inline-block;">
+    <div class="line">
+      <input type="text" name="result" id="result" placeholder="Result" readonly onclick="copyToClipboard()"/>
+      <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+      <input type="button" value="<" onclick="liveScreen('supr')" id="clear-button" />
+    </div>
+    <div class="line">
+      <input type="button" value="7" onclick="liveScreen(7)"/>
+      <input type="button" value="8" onclick="liveScreen(8)"/>
+      <input type="button" value="9" onclick="liveScreen(9)"/>
+      <input type="button" value="/" onclick="liveScreen('/')"/>
+      <input type="button" value="^" onclick="liveScreen('**')"/>
+    </div>
+    <div class="line">
+      <input type="button" value="4" onclick="liveScreen(4)"/>
+      <input type="button" value="5" onclick="liveScreen(5)"/>
+      <input type="button" value="6" onclick="liveScreen(6)"/>
+      <input type="button" value="*" onclick="liveScreen('*')"/>
+      <input type="button" value="ln" onclick="liveScreen('Math.log(')"/>
+    </div>
+    <div class="line">
+      <input type="button" value="1" onclick="liveScreen(1)"/>
+      <input type="button" value="2" onclick="liveScreen(2)"/>
+      <input type="button" value="3" onclick="liveScreen(3)"/>
+      <input type="button" value="-" onclick="liveScreen('-')"/>
+      <input type="button" value="(" onclick="liveScreen('(')"/>
+    </div>
+    <div class="line">
+      <input type="button" value="0" onclick="liveScreen(0)"/>
+      <input type="button" value="." onclick="liveScreen('.')"/>
+      <input type="button" value="=" onclick="calcul(result.value)"/>
+      <input type="button" value="+" onclick="liveScreen('+')"/>
+      <input type="button" value=")" onclick="liveScreen(')')"/>
+    </div>
+  </div>
+  <div style="display: inline-block; text-overflow: fade;">
+    <div style="overflow:auto; border:#000000 0px solid; width: 900px; height: 610px;" id="historique">
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
